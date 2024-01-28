@@ -1,0 +1,83 @@
+<html>
+    <head>
+        <title>Registration Form</title>
+    </head>
+
+    <link rel="stylesheet" type="text/css" href="styles.css">
+
+    <body>
+        <h2>Registration Form</h2>
+
+        <form>
+        <fieldset>
+        <legend><b>Personal Information</b></legend>
+        
+            <div class="form-group">
+                <b><label for="name">Name :</label></b>
+                <input type="text" name="name" id="name" required/>
+            </div>
+
+            <div class="form-group">
+                <b><label for="father_name">Father Name :</label></b>
+                <input type="text" name="father_name" id="father_name" required/>
+            </div>
+
+            <div class="form-group">
+                <b><label for="address">Address :</label></b>
+                <input type="text" name="address" id="address" required/>
+            </div>
+
+            <div class="form-group">
+                <b><label for="birth_date">Date of Birth :</label></b>
+                <input type="text" name="birth_date" id="birth_date">
+            </div>
+
+            <div class="form-group">
+                <b><label for="email">Email ID :</label></b>
+                <input type="email" name="email" id="email" />
+            </div>
+
+            <div class="form-row">
+                <div class="form-group">
+                    <b><label for="state">State :</label></b>
+                    <div class="form-select">
+                        <select name="state" id="state">
+                            <option value=""></option>
+                            <option value="Gujarat">Gujarat</option>
+                            <option value="Maharashtra">Maharashtra</option>
+                            <option value="Rajasthan">Rajasthan</option>
+                            <option value="Goa">Goa</option>
+                            <option value="Other">Other</option>
+                        </select>
+                    </div>
+                </div><br>
+
+                <div class="form-group">
+                    <b><label for="city">City :</label></b>
+                    <div class="form-select">
+                        <select name="city" id="city">
+                            <option value=""></option>
+                            <option value="Rajkot">Rajkot</option>
+                            <option value="Mumbai">Mumbai</option>
+                            <option value="Jaipur">Jaipur</option>
+                            <option value="Panji">Panji</option>
+                            <option value="Other">Other</option>
+                        </select>
+                    </div>
+                </div>
+            </div><br>
+
+            <div class="form-group">
+                <label for="tech">Upload Your Chitra</label>
+                <input type="file" name="avatar" accept=".jpg, .png"> 
+            </div><br>
+        
+            <div class="form-submit">
+                <input type="Reset" value="Reset">
+                <input type="Submit" value="Submit">
+            </div>   
+        
+        </fieldset>
+        </form>
+    </body>
+</html> 
